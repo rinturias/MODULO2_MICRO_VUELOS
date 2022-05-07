@@ -98,10 +98,12 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos
                 objVuelo.fecha=item.fecha;
                 objVuelo.precio=item.precio;
                 objVuelo.estado=item.estado;
+                objVuelo.StockAsientos = item.stockAsientos;
 
                 foreach (var itemDetalle in item.DetalleTripulacion)
                 {
                     TripulacionDto list = new();
+                    list.codVuelo = item.Id;
                     list.codTripulacion = itemDetalle.codTripulacion;
                     list.codEmpleado = itemDetalle.codEmpleado;
                     list.estado = itemDetalle.estado;

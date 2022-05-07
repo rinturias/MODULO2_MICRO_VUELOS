@@ -55,7 +55,7 @@ namespace Aerolinea.Vuelos.Application.UseCases.Command.Vuelos
 
                 await _unitOfWork.Commit();
 
-                return new ResulService { data = objVuelo, messaje = "se creo correctamente el vuelo" };
+                return new ResulService { data = objVuelo.Id, messaje = "se creo correctamente el vuelo" };
             }
            catch    (Exception ex)
             {

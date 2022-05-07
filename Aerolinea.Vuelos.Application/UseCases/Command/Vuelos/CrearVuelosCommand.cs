@@ -12,12 +12,12 @@ namespace Aerolinea.Vuelos.Application.UseCases.Command.Vuelos
     {
         private CrearVuelosCommand() { }
 
-        public CrearVuelosCommand(VuelosDto detalle)
+        public CrearVuelosCommand(RequestVueloDto detalle)
         {
             Detalle = detalle;
         }
 
-        public VuelosDto Detalle { get; set; }
+        public RequestVueloDto Detalle { get; set; }
 
         
     
