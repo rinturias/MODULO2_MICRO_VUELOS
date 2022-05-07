@@ -14,6 +14,6 @@ namespace Aerolinea.Vuelos.Application.Dto
         public DateTime FecFinal { get; set; }
 
 
-        public Guid CosVuelo { get; set; }
+        public Guid CodVuelo { get; set; }
     }
 }
